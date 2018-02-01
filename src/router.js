@@ -4,6 +4,8 @@ import { AppRegistry, TextInput, Image, View , StyleSheet} from 'react-native'
 import Login from './login/index'
 import NearYou from './location/nearYou'
 import OnTheWay from './location/onTheWay'
+import StoreCategory from './storeCategory/index'
+
 import LinearGradient from 'react-native-linear-gradient'
 import ImageHeader from './headerImage'
 
@@ -11,23 +13,8 @@ import ImageHeader from './headerImage'
 const Router = StackNavigator({
 
   Login: { screen: Login },
+
   Location: {
-    navigationOptions: {
-      title: <TextInput
-          placeholder="Enter your Location"
-          placeholderTextColor= 'white'
-          style={{
-            height: 30,
-            width: 200,
-            alignItems:"center",
-            justifyContent:"center",
-            borderBottomColor: "white",
-            borderBottomWidth: 0.5,
-          }} />,
-          headerStyle: { backgroundColor: '#3E90D8'},
-          headerTitleStyle: { color: 'white'},
-          headerTintColor:"white"
-        },
       screen: TabNavigator({
           NearYou:{
             screen: NearYou,
@@ -38,12 +25,32 @@ const Router = StackNavigator({
           OnTheWay:{
             screen: OnTheWay,
             navigationOptions:{
-              title:"On The Way",
+            title:"On The Way",
             }
           }
-      })
+      }),
+      navigationOptions: {
+            title:"Location Details",
+            headerStyle: { backgroundColor: '#3E90D8'},
+            headerTitleStyle: { color: 'white'},
+            headerTintColor:"white",
+            headerBackTitle:""
+          },
+    },
+    Category:{
+      screen:StoreCategory,
+      navigationOptions:{
+        title:"Store Category",
+        headerStyle:{
+          backgroundColor:"#3E90D8"
+        },
+        headerTitleStyle:{
+          color:"white",
+        },
+        headerTintColor:"white"
+      }
     }
-});
+})
 
 export default Router;
 

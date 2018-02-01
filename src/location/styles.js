@@ -29,6 +29,12 @@ const styles={
   },
   btnText:{
     color:"white",
+  },
+  textInput:{
+    width:deviceWidth*0.7,
+    borderBottomWidth:0.75,
+    borderBottomColor:'gray',
+    marginTop:deviceHeight*0.05,
   }
 }
 

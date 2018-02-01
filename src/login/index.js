@@ -3,7 +3,7 @@ import {View, Text, TextInput, Button, TouchableOpacity} from 'react-native'
 import {Grid, Col, Row} from 'react-native-easy-grid'
 
 import styles from './styles'
-import Image from './logo'
+import Logo from './logo'
 
 
 
@@ -15,7 +15,7 @@ export default class Login extends Component{
     <Grid>
       <Row style={styles.logoBackground}>
       <View style={styles.centerAligned}>
-        <Image />
+        <Logo />
       </View>
       </Row>
 
