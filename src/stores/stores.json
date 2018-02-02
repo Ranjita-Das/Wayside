@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "picture":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+    "name":"Pottery Barn",
+    "address":"Westfield Valley Fair",
+    "info": "4.8 miles. Santa Clara",
+    "phone":"4082619887",
+    "time": "Closes at 9:30 PM"
+  },
+  {
+    "id": 2,
+    "picture":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+    "name":"Cypress Home Decor",
+    "address":"Cabinet Store",
+    "info": "1.1 miles. San Jose",
+    "phone":"4082300187",
+    "time": "Closes at 5:30 PM"
+  },
+  {
+    "id": 3,
+    "picture":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+    "name":"Z Gallerie",
+    "address":"Santana Row",
+    "info": "5.2 miles. San Jose",
+    "phone":"3332619887",
+    "time": "Closes at 10:30 PM"
+  },
+  {
+    "id": 4,
+    "picture":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+    "name":"FabIndia",
+    "address":"Westfield Valley Fair",
+    "info": "4.8 miles. Sanatana Row",
+    "phone":"4082619887",
+    "time": "Closes at 9:30 PM"
+  }
+]

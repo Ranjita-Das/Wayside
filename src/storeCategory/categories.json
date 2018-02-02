@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "categoryName":"Electronics",
+    "categoryIconLocation":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+  },
+  {
+    "id": 2,
+    "categoryName":"Home Decor",
+    "categoryIconLocation":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+  },
+  {
+    "id": 3,
+    "categoryName":"Restaurent",
+    "categoryIconLocation":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+  },
+  {
+    "id": 4,
+    "categoryName":"Bakery",
+    "categoryIconLocation":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+  },
+  {
+    "id": 5,
+    "categoryName":"Hospital",
+    "categoryIconLocation":"https://res.cloudinary.com/demo/image/fetch/https://upload.wikimedia.org/wikipedia/commons/0/0c/Scarlett_Johansson_Césars_2014.jpg",
+  }
+]

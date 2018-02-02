@@ -11,6 +11,7 @@ export default class Login extends Component{
 
 
   render(){
+    console.log("hi")
     return(
     <Grid>
       <Row style={styles.logoBackground}>

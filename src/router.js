@@ -5,9 +5,10 @@ import Login from './login/index'
 import NearYou from './location/nearYou'
 import OnTheWay from './location/onTheWay'
 import StoreCategory from './storeCategory/index'
+import Stores from './stores/index'
+import Items from './items/index'
 
 import LinearGradient from 'react-native-linear-gradient'
-import ImageHeader from './headerImage'
 
 
 const Router = StackNavigator({
@@ -49,7 +50,33 @@ const Router = StackNavigator({
         },
         headerTintColor:"white"
       }
-    }
+    },
+    Stores:{
+      screen: Stores,
+      navigationOptions:{
+        title:"Stores",
+        headerStyle:{
+          backgroundColor:"#3E90D8"
+        },
+        headerTitleStyle:{
+          color:"white",
+        },
+        headerTintColor:"white"
+      }
+    },
+    Items:{
+      screen: Items,
+      navigationOptions:{
+        title:"Items",
+        headerStyle:{
+          backgroundColor:"#3E90D8"
+        },
+        headerTitleStyle:{
+          color:"white",
+        },
+        headerTintColor:"white"
+      }
+    },
 })
 
 export default Router;
