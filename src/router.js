@@ -7,16 +7,20 @@ import OnTheWay from './location/onTheWay'
 import StoreCategory from './storeCategory/index'
 import Stores from './stores/index'
 import Items from './items/index'
+import VideoPage from './video/index'
+import CartItems from './cart/index'
 
 import LinearGradient from 'react-native-linear-gradient'
 
 
 const Router = StackNavigator({
 
+
   Login: { screen: Login },
 
   Location: {
-      screen: TabNavigator({
+      screen: TabNavigator(
+        {
           NearYou:{
             screen: NearYou,
             navigationOptions:{
@@ -29,13 +33,19 @@ const Router = StackNavigator({
             title:"On The Way",
             }
           }
-      }),
+        },
+      {
+       tabBarPosition: 'bottom',
+       animationEnabled: false,
+       swipeEnabled: true,
+      }
+    ),
       navigationOptions: {
             title:"Location Details",
             headerStyle: { backgroundColor: '#3E90D8'},
             headerTitleStyle: { color: 'white'},
             headerTintColor:"white",
-            headerBackTitle:""
+            headerBackTitle:"",
           },
     },
     Category:{
@@ -55,6 +65,33 @@ const Router = StackNavigator({
       screen: Stores,
       navigationOptions:{
         title:"Stores",
+        headerStyle:{
+          backgroundColor:"#3E90D8"
+        },
+        headerTitleStyle:{
+          color:"white",
+        },
+        headerTintColor:"white"
+      }
+    },
+
+    VideoPage:{
+      screen: VideoPage,
+      navigationOptions:{
+        title:"Video",
+        headerStyle:{
+          backgroundColor:"#3E90D8"
+        },
+        headerTitleStyle:{
+          color:"white",
+        },
+        headerTintColor:"white"
+      }
+    },
+    CartItems:{
+      screen: CartItems,
+      navigationOptions:{
+        title:"You Cart",
         headerStyle:{
           backgroundColor:"#3E90D8"
         },

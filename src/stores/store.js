@@ -8,7 +8,7 @@ import styles from './styles'
 class Store extends Component{
   render(){
 
-    const {name, info, address, phone, time}=this.props
+
 
     return(
       <View style={styles.card}>
@@ -19,18 +19,18 @@ class Store extends Component{
             </Col>
             <Col size={3}>
               <Row size={2} style={styles.name}>
-                <Text style={styles.nameText}>{name}</Text>
+                <Text style={styles.nameText}>{this.props.name}</Text>
               </Row>
               <Row size={3} style={styles.info}>
                 <Text style={styles.infoText}>
-                  {address} {"\n"}
-                  {info} {"\n"}
-                  {phone} {"\n"}
-                  {time} {"\n"}
+                  {this.props.address} {"\n"}
+                  {this.props.info} {"\n"}
+                  {this.props.phone} {"\n"}
+                  {this.props.time} {"\n"}
                 </Text>
               </Row>
               <Row size={1}>
-                <Text style={styles.moreInfo}>More Info</Text>
+                <TouchableOpacity ><Text style={styles.moreInfo}>More Info</Text></TouchableOpacity>
               </Row>
             </Col>
         </Grid>

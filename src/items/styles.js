@@ -35,6 +35,22 @@ const styles={
   moreInfo:{
     fontSize: 13,
     color:"#3E90D8"
+  },
+  addCol:{
+    justifyContent:"flex-end",
+  },
+  addBtn:{
+    marginBottom:deviceHeight*0.02,
+    marginRight:deviceWidth*0.05,
+    backgroundColor:"#3E90D8",
+    alignItems:"center",
+    justifyContent:"center",
+    borderRadius:4,
+    height:deviceHeight*0.03,
+    width:deviceWidth*0.05
+  },
+  addIcon:{
+    color:"white"
   }
 
 }

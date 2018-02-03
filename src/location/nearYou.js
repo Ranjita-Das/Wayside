@@ -12,6 +12,9 @@ class NearYou extends Component{
         <TouchableOpacity onPress={()=>this.props.navigation.navigate("Category")} style={styles.btn}>
           <Text style={styles.btnText}>Find Stores</Text>
         </TouchableOpacity>
+        <TouchableOpacity onPress={()=>this.props.navigation.navigate("VideoPage")} style={styles.discovery}>
+          <Text style={styles.discoveryText}>Discovery</Text>
+        </TouchableOpacity>
 
       </View>
     )

@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
-import {View, Text, Image} from 'react-native'
+import {View, Text, Image, TouchableOpacity} from 'react-native'
 import {Grid, Col, Row} from 'react-native-easy-grid'
 
 import styles from './styles'
 
 class Item extends Component{
   render(){
-    const {name, price, availability, size}=this.props
+    const {name, price, availability, size, navToCart}=this.props
     return(
       <View style={styles.card}>
       <Grid>
@@ -25,6 +25,9 @@ class Item extends Component{
                 {size}
               </Text>
             </Row>
+          </Col>
+          <Col size={0.5} style={styles.addCol}>
+            <TouchableOpacity onPress={navToCart} style={styles.addBtn}><Text style={styles.addIcon}>+</Text></TouchableOpacity>
           </Col>
       </Grid>
       </View>

@@ -30,6 +30,19 @@ const styles={
   btnText:{
     color:"white",
   },
+  discovery:{
+    backgroundColor:"white",
+    width:deviceWidth*0.3,
+    height: deviceHeight*0.05,
+    alignItems: "center",
+    justifyContent:"center",
+    marginTop: deviceHeight*0.04,
+    borderRadius:deviceHeight*0.02,
+
+  },
+  discoveryText:{
+    color:"#3E90D8",
+  },
   textInput:{
     width:deviceWidth*0.7,
     borderBottomWidth:0.75,

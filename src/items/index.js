@@ -13,6 +13,10 @@ class Items extends Component{
     }
   }
 
+  navToCart(){
+    this.props.navigation.navigate('CartItems');
+  }
+
   render(){
     return(
       <ScrollView>
@@ -20,7 +24,7 @@ class Items extends Component{
           (item, i)=>
 
             <TouchableOpacity>
-              <Item name={item.name}  price={item.price} availability={item.availability} size={item.size}/>
+              <Item name={item.name}  price={item.price} availability={item.availability} size={item.size} navToCart={()=>this.navToCart()}/>
             </TouchableOpacity>
         )}
       </ScrollView>
