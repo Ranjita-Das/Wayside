@@ -6,7 +6,7 @@ import styles from './styles'
 
 class Item extends Component{
   render(){
-    const {name, price, availability, size, navToCart}=this.props
+    const {name, price, availability, size, itemClicked}=this.props
     return(
       <View style={styles.card}>
       <Grid>
@@ -27,7 +27,7 @@ class Item extends Component{
             </Row>
           </Col>
           <Col size={0.5} style={styles.addCol}>
-            <TouchableOpacity onPress={navToCart} style={styles.addBtn}><Text style={styles.addIcon}>+</Text></TouchableOpacity>
+            <TouchableOpacity onPress={itemClicked} style={styles.addBtn}><Text style={styles.addIcon}>+</Text></TouchableOpacity>
           </Col>
       </Grid>
       </View>
