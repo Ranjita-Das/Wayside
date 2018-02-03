@@ -7,14 +7,14 @@ class CartItems extends Component{
   constructor(props){
     super(props)
     this.state={
-      
+
     }
   }
 
   render(){
     return(
       <ScrollView>
-        <Text>CartItems</Text>
+        <Text>Cart Items</Text>
       </ScrollView>
     )
   }
