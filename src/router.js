@@ -91,7 +91,7 @@ const Router = StackNavigator({
     CartItems:{
       screen: CartItems,
       navigationOptions:{
-        title:"You Cart",
+        title:"Your Cart",
         headerStyle:{
           backgroundColor:"#3E90D8"
         },
@@ -114,6 +114,8 @@ const Router = StackNavigator({
         headerTintColor:"white"
       }
     },
+
+
 })
 
 export default Router;

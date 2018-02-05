@@ -11,15 +11,10 @@ class Items extends Component{
     super(props)
     this.state={
       items,
-//      cart
     }
   }
 
   itemClicked(item){
-//    console.log(item);
-//    console.log(cart);
-//    cart.push(item);
-//    console.log(cart);
     this.props.navigation.navigate('CartItems', {cartItem: item});
   }
 
